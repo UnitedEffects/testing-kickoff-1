@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+/* Configure Tailwind v4 theme */
+@theme {
+  /* Custom colors */
+  --color-primary: #154abd;
+  --color-secondary: #62dbdd;
+  --color-accent: #ff1b8d;
+  --color-success: #10b981;
+  --color-error: #ef4444;
+  --color-dark: #000000;
+  --color-light: #f8f9fa;
+}
+
+/* Reusable button classes */
+.btn-primary {
+  @apply inline-block bg-primary text-white border-2 border-primary px-6 py-2 font-semibold hover:bg-primary/90 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200 rounded-xl;
+}
+
+.btn-secondary {
+  @apply inline-block bg-transparent text-primary border-2 border-primary px-6 py-2 font-semibold hover:bg-primary hover:text-white hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200 rounded-xl;
+}
+
+.btn-tertiary {
+  @apply inline-flex items-center px-6 py-2 text-primary font-semibold hover:text-primary/80 transition-all duration-200;
+}
+
+/* Custom animations */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 30s linear infinite;
+  will-change: transform;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-in;
+}
