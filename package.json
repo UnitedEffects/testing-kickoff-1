@@ -27,7 +27,7 @@
     "@hapi/boom": "10.0.1",
     "cheerio": "1.0.0",
     "mongoose": "8.16.5",
-    "next": "15.1.4",
+    "next": "15.4.7",
     "openai": "4.80.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
