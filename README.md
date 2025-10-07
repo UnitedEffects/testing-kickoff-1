@@ -2,6 +2,32 @@
 
 A Next.js application that generates engaging social media posts from URLs or topics using AI. Built with the UEV (United Effects Ventures) Architecture Patterns.
 
+## Quick Start
+
+```bash
+# 1. Clone the repository
+git clone <your-repo-url>
+cd social-post-generator
+
+# 2. Install dependencies
+yarn install
+
+# 3. Set up environment variables
+cp .env.example .env.local
+
+# 4. Add your OpenAI API key to .env.local
+# Edit .env.local and replace 'your_openai_api_key_here' with your actual key
+# Get your key from: https://platform.openai.com/api-keys
+
+# 5. Start MongoDB (in a new terminal)
+docker run -p 27017:27017 mongo
+
+# 6. Start the development server
+yarn dev
+```
+
+Visit [http://localhost:3000](http://localhost:3000) and start generating posts! 🚀
+
 ## Features
 
 - 🔗 **URL Scraping**: Extract content from any web page
